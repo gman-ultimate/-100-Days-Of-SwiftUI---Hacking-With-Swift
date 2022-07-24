@@ -11,6 +11,7 @@ for i in 1...100 {
         fizz = true
     }
     if i.isMultiple(of: 5) {
+        print(fizz)
         buzz = true
     }
     
@@ -38,5 +39,15 @@ for number in 1...100 {
         print("\(number) is Buzzy 🐝")
     } else {
         print("\(number) is not Fizzy or Buzzy! 😔")
+    }
+}
+
+for number in 1...100000 {
+    if number.isMultiple(of: 3) && number.isMultiple(of: 5) {
+        print("Wow \(number) is Fizzy and Buzzy! Yay!")
+    } else if number.isMultiple(of: 3) {
+        print("\(number) is Fizzy")
+    } else {
+        print("\(number)")
     }
 }
